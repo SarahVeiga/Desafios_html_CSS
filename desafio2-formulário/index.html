@@ -3,60 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 2 - Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
 </head>
 <body>
+    <h1>Formulário de interação</h1>
 
-    <h1 style="color: crimson;">Formulário de interação</h1>
+    <hr>
+    <form action="https://www.sephora.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=institucional&gad_source=1&gclid=CjwKCAjw_ZC2BhAQEiwAXSgClpTGbhHF-5_likOxrxR4D-bNVtF4RIcpbT5DKCKZgfPp1iTYpjS_4hoC05gQAvD_BwE">
+        <p>Digite o se nome: <input type="text" placeholder="Digite Aqui" required></p>
+        <p>Digite o seu endereço: <input type="text" value="Rua e nr"></p>
+        <p>Digite o Bairro: <input type="text"value="Bairro"></p>
+        <p>Digite a Cidade: <input type="text"value="Santo André"></p>
+        
+            <textarea id="mensagem"  rows="10" cols="50" maxlength="500" placeholder="Digite até 500 caracteres"></textarea>
+        
+        <p>Escolha o(s) modelo(s) de trabalho:</p>
+        <ul>
+            <li><input type="checkbox">Presencial</li>
+            <li><input type="checkbox">Remoto</li>
+            <li><input type="checkbox">Híbrido</li>
+        </ul>
+        <p>Escolha o período de trabalho:</p>
+        <ul>
+            <li><input type="radio">Manhã</li>
+            <li><input type="radio">Tarde</li>
+            <li><input type="radio">Noite</li>
+        </ul>
+        <p>Escolha um Estado: <br>
+        <select name="Cidades" id="Cidades">
+            <option>Espirito Santo</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Rio Grande do Sul</option>
+        </select></p>
 
-
-    <p>Digite o seu nome <input type="text" name="endereco" placeholder="Digite aqui">
-    <br><br>
-
-    <p>Digite o seu endereço <input type="text" name="endereco" placeholder="Rua e nr">
-        <br><br>
-
-        <p>Digite o bairro <input type="text" name="endereco" placeholder="Bairro">
-            <br><br>
-
-            <p>Digite a cidade <input type="text" name="endereco" placeholder="Santo André">
-                <br><br>
-
-                 <p>Entre com suas mensagem</p>
-<textarea id="story" name="story" rows="10" cols="33">Digite até 500 caracteres</textarea>
-
-    <p>Escolha o(s) modelos(s) de trabalho:</p>
-
-    <ul style=""></ul>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <p><input type="checkbox">Aceita os termos de uso do site</p>
+        
+        <input type="submit" value="Enviar os dados">
+        <input type="reset" value="Limpar os campos">
+    </form>
 
 </body>
 </html>
